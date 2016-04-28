@@ -51,8 +51,8 @@ define('URL', URL_PROTOCOL . URL_DOMAIN . URL_SUB_FOLDER);
  * This is the place where you define your database credentials, database type etc.
  */
 define('DB_TYPE', 'mysql');
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'Orders_Presale');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_HOST', 'mysql.webcindario.com');
+define('DB_NAME', 'opapp');
+define('DB_USER', 'opapp');
+define('DB_PASS', 'jairo123');
 define('DB_CHARSET', 'utf8');
