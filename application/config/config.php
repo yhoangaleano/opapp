@@ -50,9 +50,17 @@ define('URL', URL_PROTOCOL . URL_DOMAIN . URL_SUB_FOLDER);
  * Configuration for: Database
  * This is the place where you define your database credentials, database type etc.
  */
+// define('DB_TYPE', 'mysql');
+// define('DB_HOST', 'mysql.webcindario.com');
+// define('DB_NAME', 'opapp');
+// define('DB_USER', 'opapp');
+// define('DB_PASS', 'jairo123');
+// define('DB_CHARSET', 'utf8');
+
+define('DB_HOST', getenv('OPENSHIFT_MYSQL_DB_HOST'));
+define('DB_PORT',getenv('OPENSHIFT_MYSQL_DB_PORT')); 
+define('DB_USER',getenv('OPENSHIFT_MYSQL_DB_USERNAME'));
+define('DB_PASS',getenv('OPENSHIFT_MYSQL_DB_PASSWORD'));
+define('DB_NAME',getenv('OPENSHIFT_GEAR_NAME'));
 define('DB_TYPE', 'mysql');
-define('DB_HOST', 'mysql.webcindario.com');
-define('DB_NAME', 'opapp');
-define('DB_USER', 'opapp');
-define('DB_PASS', 'jairo123');
 define('DB_CHARSET', 'utf8');
